@@ -9,10 +9,10 @@ services:
     volumes:
       - mysql:/var/lib/mysql
     environment:
-      MYSQL_ROOT_PASSWORD: Love1981
-      MYSQL_DATABASE: nasir
-      MYSQL_USER: nasir
-      MYSQL_PASSWORD: Love1981
+      MYSQL_ROOT_PASSWORD: <>
+      MYSQL_DATABASE: <>
+      MYSQL_USER: <>
+      MYSQL_PASSWORD: <>
     ports:
       - "3306:3306"
 
