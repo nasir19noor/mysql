@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql
+    networks:
+      - nasir
+    volumes:
+      - mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: Love1981
+      MYSQL_DATABASE: nasir
+      MYSQL_USER: nasir
+      MYSQL_PASSWORD: Love1981
+    ports:
+      - "3306:3306"
+
+networks:
+  nasir:
+    external: true
+    name: nasir
+volumes:
+  mysql:
+    external: true
+    name: postgresql
